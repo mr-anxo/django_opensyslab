@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opensyslab | Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="/" style="color:white; text-decoration:none;">Opensyslab</a></div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="content-blog">
+            <h2>Blog</h2>
+            <div class="article-preview">
+                <img src="https://media.istockphoto.com/id/1463093455/photo/server-room-with-lots-of-computer-and-neon-lights-data-center-with-racks-and-supercomputers.webp?s=2048x2048&w=is&k=20&c=aM--Y0uoJyKtlJOcicnVtuzh4iXhRAXCsanPqxG3SdQ=" alt="Article 1">
+                <div>
+                    <h3><a href="article1">Mise en place de serveur</a></h3>
+                    <p>La mise en place d'un serveur implique une série d'étapes incluant le choix et l'installation du système d'exploitation, la configuration réseau, la sécurisation, l'installation des services nécessaires et la surveillance continue. Une bonne planification et une maintenance régulière sont essentielles pour garantir la performance et la sécurité du serveur.</p>
+                </div>
+            </div>
+            <div class="article-preview">
+                <img src="https://cdn.pixabay.com/photo/2023/03/15/20/48/robots-7855433_960_720.jpg" alt="Article 2">
+                <div>
+                    <h3><a href="article2">L'informatique</a></h3>
+                    <p>L'informatique est la science du traitement de l'information par des machines, couvrant le matériel, les logiciels, les réseaux, les bases de données, le développement logiciel et la sécurité. Elle est centrale dans la société moderne, permettant l'automatisation, la communication et le traitement efficace des données.</p>
+                </div>
+            </div>
+            <div class="article-preview">
+                <img src="https://media.istockphoto.com/id/1467878602/photo/humanoid-robots-revolutionizing-mundane-tasks.webp?s=2048x2048&w=is&k=20&c=yzcxXhqYKO2j-Nvoy44XXK7sXj-cQpKh40xlCqh7mSM=" alt="Article 3">
+                <div>
+                    <h3><a href="article3">L'intelignece artificielle</a></h3>
+                    <p>L'intelligence artificielle (IA) vise à créer des machines capables de réaliser des tâches nécessitant normalement l'intelligence humaine, utilisant des techniques comme l'apprentissage automatique, le traitement du langage naturel et la vision par ordinateur. Elle soulève également des questions éthiques et sociales importantes, notamment en matière de confidentialité, de biais et d'impact sur l'emploi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Opensyslab. Tous droits réservés. <br>
+        <span id="datetime"></span>
+    </footer>
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>

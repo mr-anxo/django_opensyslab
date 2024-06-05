@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opensyslab | Article 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+  </head>
+<body>
+    <nav>
+        <div class="logo"><a href="/" style="color:white; text-decoration:none;">Opensyslab</a></div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="content">
+            <h2>Titre de l'article 2</h2>
+            <img src="https://cdn.pixabay.com/photo/2023/03/15/20/48/robots-7855433_960_720.jpg" alt="Article 3">
+            <p>
+                L'informatique est la science qui traite du traitement automatique de l'information par des machines. Elle englobe plusieurs domaines, dont le matériel informatique, qui comprend les composants physiques des ordinateurs comme les processeurs, la mémoire, le stockage et les périphériques, avec une évolution technologique constante permettant des performances accrues et des coûts réduits. Les logiciels, quant à eux, se divisent en logiciels système, tels que les systèmes d'exploitation (Windows, Linux, macOS) qui gèrent les ressources matérielles, et les logiciels applicatifs, utilisés par les utilisateurs finaux pour diverses tâches (bureautique, jeux, navigateurs web). Les réseaux et les communications permettent la connexion et le partage de ressources entre ordinateurs, incluant Internet, les réseaux locaux (LAN) et étendus (WAN), ainsi que les technologies sans fil comme le Wi-Fi et le Bluetooth. Les bases de données jouent un rôle crucial dans le stockage, la gestion et la récupération efficaces des données (avec des systèmes comme MySQL, PostgreSQL et Oracle). Le développement logiciel couvre le processus de conception, de codage, de test et de maintenance des logiciels, utilisant divers langages de programmation (Java, Python, C++) et méthodologies (Agile, DevOps). Enfin, la sécurité informatique est essentielle pour protéger les systèmes et les données contre les cyberattaques et les accès non autorisés, en utilisant des techniques telles que la cryptographie, les pare-feu, les systèmes de détection d'intrusion et la gestion des identités et des accès.
+            </p>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Opensyslab. Tous droits réservés. <br>
+        <span id="datetime"></span>
+    </footer>
+    <script src="{% static 'js/app.js' %}"></script>  </body>
+</body>
+</html>

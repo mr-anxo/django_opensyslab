@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opensyslab | Article 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+  </head>
+<body>
+    <nav>
+        <div class="logo"><a href="/" style="color:white; text-decoration:none;">Opensyslab</a></div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="content">
+            <h2>Titre de l'article 3</h2>
+            <img src="https://media.istockphoto.com/id/1467878602/photo/humanoid-robots-revolutionizing-mundane-tasks.webp?s=2048x2048&w=is&k=20&c=yzcxXhqYKO2j-Nvoy44XXK7sXj-cQpKh40xlCqh7mSM=" alt="Article 3">
+            <p>
+                L'intelligence artificielle (IA) est un domaine de l'informatique qui vise à créer des machines capables d'effectuer des tâches nécessitant normalement l'intelligence humaine. L'apprentissage automatique permet aux machines d'apprendre à partir de données sans être explicitement programmées, utilisant des algorithmes comme les réseaux de neurones, les forêts aléatoires et les machines à vecteurs de support. L'apprentissage profond, une sous-branche de l'apprentissage automatique, utilise des réseaux de neurones profonds pour modéliser des relations complexes, étant largement utilisé dans des domaines comme la reconnaissance d'image, la traduction automatique et la reconnaissance vocale. Le traitement du langage naturel se concentre sur l'interaction entre les ordinateurs et le langage humain, avec des applications telles que les chatbots, les traducteurs automatiques et l'analyse des sentiments. La vision par ordinateur permet aux machines de comprendre et d'interpréter les informations visuelles du monde réel, avec des utilisations dans la reconnaissance faciale, les véhicules autonomes et l'inspection automatisée. Les systèmes experts imitent les capacités de décision d'un expert humain dans un domaine spécifique, étant utilisés pour des tâches telles que le diagnostic médical, la planification financière et la maintenance prédictive. Enfin, l'IA soulève des considérations éthiques et sociales importantes, incluant la confidentialité, la surveillance, les biais algorithmiques et l'impact sur l'emploi.
+            </p>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Opensyslab. Tous droits réservés. <br>
+        <span id="datetime"></span>
+    </footer>
+    <script src="{% static 'js/app.js' %}"></script>  </body>
+</body>
+</html>

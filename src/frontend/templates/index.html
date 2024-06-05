@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iGenius | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="/" style="color:white; text-decoration:none;">iGenius</a></div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Bienvenue sur iGenius</h1>
+        <p>Nous créons des expériences numériques incroyables</p>
+        <a href="#about" class="btn">En savoir plus</a>
+    </header>
+    <section id="about" class="content">
+        <h2>À propos de nous</h2>
+        <p>Nous sommes une entreprise dédiée à fournir les meilleures solutions numériques pour nos clients.</p>
+    </section>
+    <section id="services" class="content">
+        <h2>Nos Services</h2>
+        <p>Découvrez notre gamme complète de services allant du développement web au marketing digital.</p>
+    </section>
+    <section id="contact" class="content">
+        <h2>Contactez-nous</h2>
+        <p>Pour plus d'informations, n'hésitez pas à nous contacter.</p>
+    </section>
+    <footer>
+         &copy; 2024 iGenius. Tous droits réservés. <br>
+         <span id="datetime"></span>
+    </footer>
+
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>
