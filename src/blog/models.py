@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.text import slugify
 
 # Create your models here.
 
@@ -9,4 +10,12 @@ class BlogPost(models.Model):
     date = models.DateField(blank=True, null=True)
     content = models.TextField()
     description = models.TextField()
+    
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify()
+        
+        if not self.date and self.published:
+            self.date = 
+        super().save(*args, **kwargs)
     
