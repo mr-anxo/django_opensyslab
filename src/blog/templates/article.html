@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opensyslab | Article 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="/" style="color:white; text-decoration:none;">Opensyslab</a>
+      </div>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <li>
+          <a href="#about">À propos</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <div class="content">
+        <h2>{{article.title}}</h2>
+        <img src="{{article.}}" alt="Article 1" />
+        <p>{{article.content}}</p>
+      </div>
+    </section>
+    <footer>
+      &copy; 2024 Opensyslab. Tous droits réservés. <br>
+      <span id="datetime"></span>
+  </footer>
+  <script src="{% static 'js/app.js' %}"></script>  </body>
+</html>
