@@ -6,5 +6,6 @@ from blog.views import article, index
 
 urlpatterns = [
     #path("", index, name=""),
-    path("article<int:article_number>/", article, name="article")
+    #path("article<int:article_number>/", article, name="article"),
+    path("article/<str:article_slug>", article, name="article")
 ]

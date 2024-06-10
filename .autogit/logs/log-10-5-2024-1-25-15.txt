@@ -1,0 +1,26 @@
+-------------------- Auto-Git Log --------------------
+Mon Jun 10 2024 01:25:15 GMT+0000 (Greenwich Mean Time)
+------------------------------------------------------
+
+Modified files:
+* src/blog/__pycache__/models.cpython-310.pyc
+* src/blog/models.py
+* src/blog/static/blog-blogpost.json
+* src/blog/views.py
+* src/frontend/templates/blog.html
+* src/frontend/views.py
+
+
+Created files:
+* .autogit/logs/log-10-5-2024-0-55-8.txt
+* src/blog/templates/article.html
+
+
+Deleted files:
+* src/blog/migrations/0001_initial.py
+* src/blog/migrations/0002_blogpost_description.py
+* src/blog/migrations/0003_alter_blogpost_date.py
+* src/db.sqlite3
+
+
+Renamed files:

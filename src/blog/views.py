@@ -8,9 +8,9 @@ from blog.models import BlogPost
 def index(request):
     return HttpResponse("Hello World !")
 
-def article(request,article_number):
-    articles = BlogPost.objects.get(id=article_number)
-    if 1 <= article_number <= 3:
+def article(request,article_slug):
+    article = BlogPost.objects.get(slug=article_slug)
+    if article.slug:
         return render(request, f"article.html", context={ "article" : article})
     else:
         return render(request, "404.html")
